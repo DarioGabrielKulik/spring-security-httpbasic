@@ -28,7 +28,7 @@ public class AuthPrivate {
         }
         catch (Exception ex){
             Map<String, String> error = new HashMap<>();
-            error.put("mensaje", "Tu maldita consulta aruino el programa");
+            error.put("mensaje", "Tu maldita consulta arruino el programa");
             error.put("error", ex.getMessage());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(error);
         }
